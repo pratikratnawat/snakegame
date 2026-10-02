@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Snake Game</title>
+    <link rel="stylesheet" href="snake.css"> 
+</head>
+<body>
+
+    <div class="game-container">
+
+        <div class="header">
+         <h1>🐍 Snake Game</h1>
+            <div class="score-board">
+                <span>Score: <span id="score">0</span></span>
+                <span>High Score: <span id="highScore">0</span></span>
+            </div>
+        </div>
+
+        <div class="controls-top">
+            <button id="startBtn">Start Game</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+
+        <div class="play-board" id="playBoard"></div>
+
+        <div class="game-over" id="gameOver">
+            <h2>Game Over</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <button data-key="ArrowUp">⬆</button>
+
+            <div class="middle-row">
+                <button data-key="ArrowLeft">⬅</button>
+                <button data-key="ArrowDown">⬇</button> 
+                <button data-key="ArrowRight">➡</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
